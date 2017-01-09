@@ -13,7 +13,14 @@ class Person {
     private var _lastName: String!
     
     var firstName: String {
-        return _firstName
+        get {
+            return _firstName
+        }
+        
+        set {
+            _firstName = newValue
+            
+        }
     }
     
     var lastName: String {
@@ -25,7 +32,7 @@ class Person {
         self._lastName = last
     }
     
-//    var fullName: String {
-//        return "\(_firstName) \(_lastName)"
-//    }
+    var fullName: String {
+        return "\(_firstName) \(_lastName)"
+    }
 }

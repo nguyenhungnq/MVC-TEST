@@ -27,17 +27,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saitama" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-fu-Cln" customClass="RoundedImageView" customModule="mvc_test" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="QhE-Tw-2Yp"/>
+                                    <constraint firstAttribute="width" constant="240" id="sH6-jw-aPK"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-QG-yOr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7P0-cf-h2g"/>
+                                    <constraint firstAttribute="height" constant="30" id="zGW-3N-jOZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-5s-CVw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lms-Kl-ZuA"/>
+                                    <constraint firstAttribute="width" constant="56" id="PMG-ND-mEW"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIY-58-St3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="SbW-5s-CVw" firstAttribute="top" secondItem="Idz-fu-Cln" secondAttribute="bottom" constant="61" id="0Ua-Su-Tal"/>
+                            <constraint firstItem="wrF-QG-yOr" firstAttribute="top" secondItem="T4P-XP-lm6" secondAttribute="bottom" constant="8" id="6pE-d7-GRw"/>
                             <constraint firstItem="T4P-XP-lm6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfJ-vt-fb7"/>
+                            <constraint firstItem="Idz-fu-Cln" firstAttribute="top" secondItem="T4P-XP-lm6" secondAttribute="bottom" constant="58" id="SwW-HX-0Fc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T4P-XP-lm6" secondAttribute="trailing" constant="85" id="UlD-iz-oa5"/>
+                            <constraint firstItem="Idz-fu-Cln" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4k-d9-bFE"/>
                             <constraint firstItem="T4P-XP-lm6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="c6H-Tk-1AW"/>
                             <constraint firstItem="T4P-XP-lm6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="lgm-ec-TtF"/>
+                            <constraint firstItem="wrF-QG-yOr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mX2-m6-tRU"/>
+                            <constraint firstItem="SbW-5s-CVw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5S-Hw-KQ9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fullName" destination="T4P-XP-lm6" id="y7G-wC-FuF"/>
+                        <outlet property="renameField" destination="wrF-QG-yOr" id="PaN-ch-Hrg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,4 +77,7 @@
             <point key="canvasLocation" x="118.125" y="123.59154929577466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="saitama" width="900" height="450"/>
+    </resources>
 </document>
