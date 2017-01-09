@@ -15,6 +15,7 @@
 		672130651E23340900A9B9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672130631E23340900A9B9CB /* LaunchScreen.storyboard */; };
 		672130701E23340900A9B9CB /* mvc_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721306F1E23340900A9B9CB /* mvc_testTests.swift */; };
 		6721307B1E23340900A9B9CB /* mvc_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721307A1E23340900A9B9CB /* mvc_testUITests.swift */; };
+		6721308E1E2337AE00A9B9CB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721308D1E2337AE00A9B9CB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		672130761E23340900A9B9CB /* mvc-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvc-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6721307A1E23340900A9B9CB /* mvc_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvc_testUITests.swift; sourceTree = "<group>"; };
 		6721307C1E23340900A9B9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6721308D1E2337AE00A9B9CB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,12 @@
 		672130561E23340800A9B9CB /* mvc-test */ = {
 			isa = PBXGroup;
 			children = (
+				6721308C1E23376500A9B9CB /* Util */,
+				6721308B1E23374900A9B9CB /* Resources */,
+				6721308A1E23371700A9B9CB /* Model */,
+				672130891E23370500A9B9CB /* View */,
+				672130881E2336F000A9B9CB /* Controller */,
 				672130571E23340800A9B9CB /* AppDelegate.swift */,
-				672130591E23340800A9B9CB /* ViewController.swift */,
 				6721305B1E23340900A9B9CB /* Main.storyboard */,
 				672130611E23340900A9B9CB /* Assets.xcassets */,
 				672130631E23340900A9B9CB /* LaunchScreen.storyboard */,
@@ -126,6 +132,43 @@
 				6721307C1E23340900A9B9CB /* Info.plist */,
 			);
 			path = "mvc-testUITests";
+			sourceTree = "<group>";
+		};
+		672130881E2336F000A9B9CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				672130591E23340800A9B9CB /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		672130891E23370500A9B9CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6721308A1E23371700A9B9CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6721308D1E2337AE00A9B9CB /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6721308B1E23374900A9B9CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6721308C1E23376500A9B9CB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +307,7 @@
 			files = (
 				672130601E23340900A9B9CB /* mvc_test.xcdatamodeld in Sources */,
 				6721305A1E23340800A9B9CB /* ViewController.swift in Sources */,
+				6721308E1E2337AE00A9B9CB /* Person.swift in Sources */,
 				672130581E23340800A9B9CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
